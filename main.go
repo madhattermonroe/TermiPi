@@ -40,6 +40,9 @@ func main() {
 	bot.Handle(tele.OnText, func(c tele.Context) error {
 		if contains(config.WhiteList, c.Sender().ID) {
 			command := c.Text()
+			if c.Text() == "/start" {
+				c.Send("It's ok!")
+			}
 			output, err := executeCommand(command)
 			if err != nil {
 				return c.Send("Error: \n" + err.Error())
