@@ -1,0 +1,1 @@
+nohup ./termipi & echo $! > ./termi.pid
