@@ -5,7 +5,7 @@ Also you can get your ID with `@getmyid_bot`.
 This is necessary to create white lists of users and avoid unauthorized access to the bot functionality.
 
 App was made for raspberry pi, but can be used on any unix system.
-For rpi - to determine the architecture use `uname -m`
+For rpi - to determine the kernel version use `uname -m`
 
 **Building**
 
