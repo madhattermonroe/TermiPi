@@ -47,7 +47,7 @@ func main() {
 			if err != nil {
 				return c.Send("Error: \n" + err.Error())
 			}
-			return c.Send("Result: \n" + output)
+			return c.Send(output)
 		}
 		return c.Send("Authorization failed!")
 	})
